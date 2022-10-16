@@ -77,7 +77,7 @@ public class Main {
         if (hours <= 3) {
             return 2;
         } else if (hours <= 19) {
-            return (float) ((hours - 3) * 0.5 + 2);
+            return (float) (Math.ceil(hours - 3) * 0.5 + 2);
         } else {
             return 10;
         }
